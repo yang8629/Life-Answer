@@ -1,10 +1,11 @@
-/* .btn {
-    width: 200px;
-    height: 100px;
-    padding-top: 25px;
-    background-color: rgba(229, 255, 0, 0.582);
-    text-align: center;
-    color: rgb(93, 85, 214);
-    font-size: 50px;
-    font-weight: 900;
-} */
+.form {
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+}

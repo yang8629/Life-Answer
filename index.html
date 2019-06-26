@@ -8,15 +8,16 @@
 </head>
 
 <body>
-
-    <form id="form">
-        是誰：<input type="text" name="Who" required><br> 在哪裡：
-        <input type="text" name="Where" required><br> 做了什麼：
-        <textarea name="What" rows="10" cols="30" required></textarea><br>
-        <a class="btn btn-primary" id="btn-send" href="#" role="button">送出</a>
-    </form>
-    <button type="button" class="btn btn-primary" id="btn-read">Primary</button>
-
+    <div class="container">
+        <form class="form mt-3" id="form">
+            是誰：<input type="text" name="Who" required><br><br> 在哪裡：
+            <input type="text" name="Where" required><br><br> 做了什麼：
+            <textarea name="What" rows="10" cols="30" required></textarea><br><br>
+            <a class="btn" id="btn-send" href="#" role="button">送出</a>
+            <a class="btn" id="btn-read" href="#" role="button">取得</a>
+            <a class="btn btn-primary" id="btn-answer" href="#" role="button">開示</a>
+        </form>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
