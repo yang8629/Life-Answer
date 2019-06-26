@@ -57,11 +57,6 @@ function answer() {
     parameter.sheetUrl = "https://docs.google.com/spreadsheets/d/1doUyHaiaXS1ZNRBhSbw3xdH4pVwnV60_N8vy-6kUQpw/edit?usp=sharing";
     parameter.sheetTag = "工作表2";
     $.get(postURL, parameter, function(data) {
-
         alert(data.answer);
     });
 }
-
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-};

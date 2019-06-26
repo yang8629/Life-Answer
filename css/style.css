@@ -1,0 +1,11 @@
+.form {
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+}
