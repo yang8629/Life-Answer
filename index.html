@@ -1,27 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/5f90e1fbea.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
+  </head>
+  <body background="bg 01.jpg">
     <div class="container">
-        <form class="form mt-3" id="form">
-            是誰：<input type="text" name="Who" required><br><br> 在哪裡：
-            <input type="text" name="Where" required><br><br> 做了什麼：
-            <textarea name="What" rows="10" cols="30" required></textarea><br><br>
-            <a class="btn" id="btn-send" href="#" role="button">送出</a>
-            <a class="btn" id="btn-read" href="#" role="button">取得</a>
-            <a class="btn" id="btn-answer" href="#" role="button">開示</a>
-        </form>
-    </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-<script src="js/main.js"></script>
+        <div class="intro">
+            <img src="img/intro.png" alt="">
+        </div>
+        <div class="r_area">
+            <div class="title">
+                <img src="img/title.png" alt="">
+            </div>
+            <div class="hint">
+                <img src="img/hint.png" alt="">
+            </div>
+            <button type="button" class="btn_start btn border toggle-btn" onclick="toggleCard()">
+                <h3>開始提問</h3>
+            </button>
+            <button type="button" class="btn_start btn border toggle-btn" id="btn-answer">
+                <h3>隨機產生</h3>
+            </button>
 
+            <div id="ans_card">
+              <div class="row">
+                <div class="col-12">
+                    <p id="answer"></p>
+                </div>
+                <div class="col-12 answer">
+                  <button type="button" class="btn_again btn border-0 toggle-btn" onclick="toggleAnswer()">
+                      <h4>繼續提問</h4>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div id="q_card">
+                <div class="btn_card">
+                    <button type="button" class="btn_cancel btn toggle-btn" onclick="toggleCard()">
+                        <p>取消</p>
+                    </button>
+                    <button type="button" class="btn_enter btn border-0 toggle-btn" id="btn-send">
+                        <p>確定</p>
+                    </button>
+                </div>
+                <img class="title_card" src="img/card_name.png" alt="">
+                <form class="q_input">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label>是誰？</label>
+                            <input type="text" class="form-control f_who border-0" placeholder="範例：派大星" name="Who">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="l_where">在哪裡？</label>
+                            <input type="text" class="form-control f_where border-0" placeholder="範例：深海" name="Where">
+                        </div>
+                    </div>
+                    <div class="l_dowhat">
+                        <label>提出問題</label>
+                        <input type="text" class="form-control f_dowhat border-0" placeholder="範例：要做什麼？" name="What">
+                    </div>
+                </form>
+                <img class="bg_card" src="bg 01.jpg" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
